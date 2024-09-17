@@ -1,0 +1,58 @@
+/* Default Navbar Styles */
+.navbar {
+    background-color: #000000;
+    padding: 10px;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Centered by default */
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    color: #e50914;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #e2e1e1;
+}
+
+.navbar a.active {
+    color: #e50914;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column; /* Stack vertically */
+        align-items: flex-start; /* Align to the left */
+        padding: 0; /* Remove padding */
+    }
+
+    .navbar li {
+        margin: 10px 0; /* Add vertical spacing */
+    }
+
+    .navbar {
+        padding: 10px 5%; /* Adjust padding for mobile view */
+    }
+}
+
+/* For aligning items to the right on mobile */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column; /* Stack vertically */
+        align-items: flex-end; /* Align to the right */
+        padding: 0; /* Remove padding */
+    }
+}

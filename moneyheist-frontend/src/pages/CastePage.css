@@ -1,0 +1,39 @@
+/* Cast Page Styles */
+.cast-page {
+    padding: 2rem;
+    text-align: center;
+}
+
+.cast-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cast-list li {
+    background-color: #2c2c2c; /* Darker background for items */
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 5px;
+    border: 1px solid #e50914; /* Red border */
+    width: 200px;
+    transition: background-color 0.3s;
+    text-align: left;
+}
+
+.cast-list img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.cast-list h2 {
+    color: #e50914; /* Money Heist Red */
+}
+
+.cast-list p {
+    color: #ccc; /* Light text for bio */
+}
