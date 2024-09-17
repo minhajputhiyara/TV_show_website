@@ -8,7 +8,6 @@ A web application to view and interact with episodes from the Money Heist series
 - [Frontend Setup](#frontend-setup)
 - [Running the Project](#running-the-project)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## Prerequisites
 
@@ -137,6 +136,3 @@ Before you begin, ensure you have met the following requirements:
 
 If you want to contribute to this project, please fork the repository and submit a pull request. Ensure your code adheres to the project's coding standards and includes relevant tests.
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
