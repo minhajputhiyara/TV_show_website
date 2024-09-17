@@ -9,7 +9,7 @@ const HomePage = () => {
     const navigate = useNavigate(); // Initialize useNavigate
 
     useEffect(() => {
-        fetch('http://localhost:8000/api/episodes/')
+        fetch('https://minhajminhaj.pythonanywhere.com/api/episodes/')
             .then(response => response.json())
             .then(data => setEpisodes(data))
             .catch(error => console.error('Error fetching episodes:', error));
@@ -35,7 +35,7 @@ const HomePage = () => {
                 <img src="https://dnm.nflximg.net/api/v6/BvVbc2Wxr2w6QuoANoSpJKEIWjQ/AAAAQbm_e3DQYMqYApzHilEi8qF94zu9K_GiyEvxjgvBkIQNQSa7-BkkHBIisOIdPFdIkc77oWrA-a6LV8egGCoszLt1hpQ2TJz8-IBiUVfp8qwimlu3D5Yk83WUteWY1dElPHDp3DQco9xxtM3EHutQeyAvttk.jpg?r=f03" alt="Money Heist Header" className="header-image" />
                 <div className="hero-text">
                     <h1>Money Heist</h1>
-                    <h4>Discover the world of Money Heist. Find your favorite episodes and more.</h4>
+                    {/* <h4>Discover the world of Money Heist. Find your favorite episodes and more.</h4> */}
                     <p>Money Heist (originally titled La Casa de Papel) is a Spanish television series that has captivated audiences worldwide with its intense storytelling, complex characters, and gripping heist drama. Created by Álex Pina.</p>
                 </div>
             </header>
@@ -49,6 +49,7 @@ const HomePage = () => {
                 />
             </section>
             <section className="episode-list-section">
+            <h3>Discover the world of Money Heist. Find your favorite episodes and more.</h3>
                 <div className="episode-cards">
                     {filteredEpisodes.map(episode => (
                         <div

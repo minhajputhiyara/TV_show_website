@@ -11,7 +11,7 @@ const EpisodeDetail = () => {
 
     useEffect(() => {
         // Fetch episode details
-        fetch(`http://localhost:8000/api/episodes/${id}/`)
+        fetch(`https://minhajminhaj.pythonanywhere.com/api/episodes/${id}/`)
             .then(response => response.json())
             .then(data => {
                 setEpisode(data);
@@ -20,7 +20,7 @@ const EpisodeDetail = () => {
             .catch(error => console.error('Error fetching episode details:', error));
 
         // Fetch episode comments
-        fetch(`http://localhost:8000/api/episodes/${id}/comments/`)
+        fetch(`https://minhajminhaj.pythonanywhere.com/api/episodes/${id}/comments/`)
             .then(response => response.json())
             .then(data => {
                 setComments(data);  // Ensure data is an array
@@ -36,7 +36,7 @@ const EpisodeDetail = () => {
         event.preventDefault();
 
         // Post new comment to backend
-        fetch(`http://localhost:8000/api/episodes/${id}/comments/`, {
+        fetch(`https://minhajminhaj.pythonanywhere.com/api/episodes/${id}/comments/`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

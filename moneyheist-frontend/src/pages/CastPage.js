@@ -9,7 +9,7 @@ const CastPage = () => {
     useEffect(() => {
         const fetchCast = async () => {
             try {
-                const response = await axios.get('http://localhost:8000/api/cast/');
+                const response = await axios.get('https://minhajminhaj.pythonanywhere.com//api/cast/');
                 setCast(response.data);
             } catch (error) {
                 console.error('Error fetching cast:', error);
